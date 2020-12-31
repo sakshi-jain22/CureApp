@@ -1,5 +1,6 @@
 # CureApp
 
 Developed by:
-Akanksha Tyagi
+
+Akanksha Tyagi,
 Sakshi Jain
