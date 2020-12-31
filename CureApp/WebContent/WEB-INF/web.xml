@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>CureApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>Login.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <description>Path to upload medicine's image files</description>
+    <param-name>ImageFile</param-name>
+    <param-value>C:\Users\Sakshi\eclipse-workspace\myServlet\CureApp\WebContent\img\imageUpload\medImg\</param-value>
+  </context-param>
+  
+  <context-param>
+    <description>Path to upload medicine's ingredient image files</description>
+    <param-name>IngrImageFile</param-name>
+    <param-value>C:\Users\Sakshi\eclipse-workspace\myServlet\CureApp\WebContent\img\imageUpload\medIngredients\</param-value>
+  </context-param>
+  
+  <context-param>
+    <description>Path to fetch medicine's image files</description>
+    <param-name>ImageFileFetch</param-name>
+    <param-value>/CureApp/img/imageUpload/medImg/</param-value>
+  </context-param>
+  
+  <context-param>
+    <description>Path to fetch medicine's ingredient image files</description>
+    <param-name>IngrImageFileFetch</param-name>
+    <param-value>/CureApp/img/imageUpload/medIngredients/</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>doctorSignup</servlet-name>
+    <servlet-class>com.cureapp.Route.DoctorSignup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doctorSignup</servlet-name>
+    <url-pattern>/register_doctor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>login</servlet-name>
+    <servlet-class>com.cureapp.Route.LoginRoute</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>login</servlet-name>
+    <url-pattern>/processlogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>doctorlogin</servlet-name>
+    <servlet-class>com.cureapp.Route.DoctorLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>doctorlogin</servlet-name>
+    <url-pattern>/loginAsDoctor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>abc</servlet-name>
+    <servlet-class>com.cureapp.Route.Signup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abc</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>abcd</servlet-name>
+    <servlet-class>com.cureapp.Route.ChemistAuthentication</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>abcd</servlet-name>
+    <url-pattern>/chemlogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>map2</servlet-name>
+    <servlet-class>com.cureapp.Route.AddingMedicines</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>map2</servlet-name>
+    <url-pattern>/adding_medicine</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>patientlogin</servlet-name>
+    <servlet-class>com.cureapp.Route.PatientLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>patientlogin</servlet-name>
+    <url-pattern>/loginAsPatient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>patientsignup</servlet-name>
+    <servlet-class>com.cureapp.Route.PatientSignup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>patientsignup</servlet-name>
+    <url-pattern>/signupAsPatient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>selectDoctor</servlet-name>
+    <servlet-class>com.cureapp.Route.SelectDoctorAssignment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectDoctor</servlet-name>
+    <url-pattern>/assigndoctor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>appointment</servlet-name>
+    <servlet-class>com.cureapp.Route.AssignAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>appointment</servlet-name>
+    <url-pattern>/assignAppointment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>deletemedicine</servlet-name>
+    <servlet-class>com.cureapp.Route.DeleteMedicine</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deletemedicine</servlet-name>
+    <url-pattern>/deleteMedicine</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addprescription</servlet-name>
+    <servlet-class>com.cureapp.Route.AddPrescription</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addprescription</servlet-name>
+    <url-pattern>/add_prescription</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>viewpatients</servlet-name>
+    <servlet-class>com.cureapp.Route.RedirectToView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewpatients</servlet-name>
+    <url-pattern>/view_patients</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>prescription</servlet-name>
+    <servlet-class>com.cureapp.Route.ViewPrescriptionRoute</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>prescription</servlet-name>
+    <url-pattern>/view_prescription</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>fetchmedicineAngularJS</servlet-name>
+    <servlet-class>com.cureapp.Route.FetchMedicineServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fetchmedicineAngularJS</servlet-name>
+    <url-pattern>/fetchMedicineServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>fetchdoctorAngularJS</servlet-name>
+    <servlet-class>com.cureapp.Route.FetchDoctorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>fetchdoctorAngularJS</servlet-name>
+    <url-pattern>/fetchDoctorServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

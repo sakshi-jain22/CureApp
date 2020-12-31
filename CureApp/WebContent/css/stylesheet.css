@@ -1,0 +1,301 @@
+.loader {
+	position: inherit;
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+}
+
+.dot {
+	display: block;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: calc(50% - 5px);
+	border-radius: 5px;
+	background-color: #00008B;
+	transform-origin: 5px 30px;
+	animation: rotate;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+}
+
+@keyframes rotate {
+	from {
+		transform : rotateZ(0deg);
+	}
+	to {
+		transform : rotateZ(359deg);
+	}
+}
+
+.d2 {
+	animation-delay : 0.1s;
+}
+
+.d3 {
+	animation-delay : 0.2s;
+}
+
+.d4 {
+	animation-delay : 0.3s;
+}
+
+.d5 {
+	animation-delay : 0.4s;
+}
+
+
+/* ==============================
+		Footer designing
+		
+	007481 (Ming | teal)
+	FFD907 (gold web golden | school bus yellow)
+	220C10 (xiketic | seal brown)
+	CF5C36 (flame | Chilean Fire)
+	0AFFE7 (turqoise blue | Aqua)
+  ===============================*/
+#footer1 {
+    background: #220c10;
+}
+
+#footer2 {
+    background: #CF5C36;
+}
+
+#footer1 p {
+	margin: 0;
+}
+
+#footer2 p {
+	margin: 0;
+	color: #FFC101;
+}
+
+.footerlinks {
+	color: #0AFFE7;
+	margin: 35px;
+}
+
+a.footerlinks:hover {
+	color: #007481;
+	text-decoration: none;
+	background-color:transparent;
+}
+
+/* ============================
+	 Form icon position
+=============================== */
+div.icon {
+	padding: 42px 10px 10px 28px;
+	font-size: 28px;
+	cursor: pointer;
+}
+
+/* ============================
+	 Form small icon position
+=============================== */
+div.icon-small {
+	padding: 42px 10px 10px 12px;
+	font-size: 28px;
+	cursor: pointer;
+}
+
+/* ============================
+	 Form icon color
+=============================== */
+.text-css {
+	color : #00BDAA;
+}
+
+.help-text1 {
+	font-size: x-small !important;
+}
+
+.help-text2 {
+	font-size: xx-small !important;
+	cursor: pointer;
+}
+
+/* ============================
+	 Background setup
+=============================== */
+body.bgstyle {
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-image: url("../img/bg-img.jpg");
+}
+
+/* ======================================
+		Chat Background Setup
+========================================= */
+body.panel {
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-image: url("../img/bgchat.jpg");
+}
+
+
+/* ========================================
+			Magnify Images
+===========================================*/
+td.img-wrapper {
+	margin-top : 0;
+}
+
+.img-wrapper img{
+	width: 150px;
+	height: auto;
+}
+
+.img-wrapper img:hover {
+	cursor: zoom-in;
+}
+
+.img-align {
+	float: right;
+}
+
+
+/*=======================================
+		View this medicine section
+========================================= */
+.img-gallery img:hover {
+	cursor: zoom-in;
+}
+
+.removeCssPadding {
+	padding: 0 0 !important;
+}
+
+.wrapper {
+	margin: 0px 50px;
+}
+
+.description span {
+	font-size: smaller;
+	font-weight: 600;
+	font-style: oblique;
+	font-family: cursive;
+}
+
+span.icon-manage {
+	font-size: 14px;
+}
+
+
+.mfp-image-holder .mfp-close {
+    top: 20px !important;
+    right: -13px !important;
+    background-image: url("../img/close.png") !important;
+    background-repeat: no-repeat !important;
+    background-position-x: right;
+    background-position-y: center;
+    width: fit-content !important;
+    padding-right: 10px !important;
+    outline: none !important;
+}
+
+
+.mfp-close {
+    color: transparent !important;
+    cursor: pointer !important;
+}
+
+/* ========================================
+		Custom Buttons
+=========================================== */
+
+.btn-brown {
+	background-color : #220C10 !important;
+	color: #fff !important;
+}
+
+
+/* ======================================================
+                Slider section
+======================================================= */
+
+#slider-banners {
+    width: 960px;
+    margin: auto;
+}
+
+.sliderimage {
+    position: relative;
+    z-index: -1;
+    border: 30px solid white;
+    border-radius: 5px 50px 5px;
+}
+
+.owl-dot {
+    background-image: url("../img/button.png") !important;
+    background-repeat: no-repeat !important;
+    display: inline-block;
+}
+
+.owl-dot.active {
+    background-image: url("../img/button-act.png") !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    background: transparent !important;
+}
+
+.owl-dots {
+    position: relative;
+    top: -30px;
+    left: -10px;
+}
+
+
+/*-----------------------------------------------------------------------------
+											about us
+--------------------------------------------------------------------------------
+*/
+
+.wrapper
+{
+	width: 550px;
+    margin: 0 auto;
+    height: 760px;
+}
+
+.aboutus-carousel
+{
+	margin: 5% auto 0;
+}
+
+.img-area
+{
+	width: 300px;
+	height: 400px;
+	display: block;
+	overflow:hidden;
+	margin:0 auto;								
+}
+
+.img-area img
+{
+	width:100%;
+	height:110%;
+	padding-top:10px;
+}
+
+.single-developer
+{
+	background: #fff;
+	text-align: center;
+	border-radius:100px 10px 100px 10px;
+	background-color:;
+}
+.img-text h2.name
+{
+	text-transform: uppercase;
+	margin: 20px 0 -5px;
+	color: #ff5257;
+}
+
+.img-text hr
+{
+	color: #ff5257;
+}
